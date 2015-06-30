@@ -38,7 +38,15 @@ h1, h2, h3, h4, h5 {
 
 }
 
-#subtitle {
+.liner {
+    visibility: hidden; 
+}
+
+.linerBottom{
+    visibility: hidden;
+}
+
+.subtitle {
     font-family: 'palatino linotype', palatino, serif;
     font-size: 32px;
     font-weight: bold;
