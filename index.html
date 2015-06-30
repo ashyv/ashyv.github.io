@@ -5,10 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' href='style.css'/>
+	<link rel="stylesheet" href="animations.css"/>
+	<link rel="stylesheet" href="animate.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.3/jquery.scrollTo.min.js"></script>
 
 	
@@ -41,10 +44,25 @@
             <br>
             <br>
             <br>
-            <p id="title">Ashwin Vaidyanathan</p>
+            <p id="title" class="animated zoomIn">Ashwin Vaidyanathan</p>
             <br>
             <br>
-            <p id="subtitle">Developer&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMarketer&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLeader</p>
+            <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-2">
+                        <center><p class="animated bounceInLeft subtitle">Developer</p></center>
+                    </div> 
+                    <div class="col-sm-1"></div> 
+                    <div class="col-sm-2">
+                        <center><p class="animated bounceInUp subtitle">Marketer</p></center>
+                    </div> 
+                    <div class="col-sm-1"></div> 
+                    <div class="col-sm-2">
+                        <center><p class="animated bounceInRight subtitle">Leader</p></center>
+                    </div>  
+                    <div class="col-sm-2"></div>
+                </div>
+            <!--<p id="subtitle"><span class="aminated bounceInLeft">Developer</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="aminated bounceInBottom">Marketer</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="aminated bounceInRight">Leader</span></p> -->
         </div>
         <div id="about_section">
             <br>
@@ -53,7 +71,7 @@
                 <br>
                 <p class="s1">About Me</p> 
                 <br>
-                <center><img class="img-responsive" src="imgs/bluelinepic4.png" alt="Blue Line"></center>
+                <center><img class="img-responsive liner" src="imgs/bluelinepic4.png" alt="Blue Line"></center>
                 <br>
                 <center><img src="imgs/ashwinpic.jpg" class="img-circle" alt="Ashwin" width="320" height="214"></center>
                 <br>
@@ -63,7 +81,7 @@
                 <br>
                 <h4 class="about_font">In my free time, I enjoy hanging out with friends, playing ultimate frisbee, and of course, creating products for the world to use!</h3> 
                 <br>
-                <center id="skills_nav"><img class="img-responsive" src="imgs/bluelinepic4.png" alt="Blue Line"></center>
+                <center id="skills_nav"><img class="img-responsive linerBottom" src="imgs/bluelinepic4.png" alt="Blue Line"></center>
                 <br>
                 <br>
             </div>
@@ -74,7 +92,7 @@
                 <br>
                 <p class="s1">Programming Skills</p>
                 <br>
-                <center><img class="img-responsive" src="imgs/redlinepic.png" alt="Red Line"></center>
+                <center><img class="img-responsive liner" src="imgs/redlinepic.png" alt="Red Line"></center>
                 <br>
                 <br>
                 <div class="row">
@@ -122,7 +140,7 @@
                     </div>    
                 </div>
                 <br>
-                <center id="projects_nav"><img class="img-responsive" src="imgs/redlinepic.png" alt="Red Line"></center>
+                <center id="projects_nav"><img class="img-responsive linerBottom" src="imgs/redlinepic.png" alt="Red Line"></center>
                 <br>     
                 <br>
             </div>
@@ -132,7 +150,7 @@
             <br>
             <p class="s1">Projects</p>
             <br>
-            <center><img class="img-responsive" src="imgs/greenlinepic.png" alt="Green Line"></center>
+            <center><img class="img-responsive liner" src="imgs/greenlinepic.png" alt="Green Line"></center>
             <br>
             <br>
             <div class="well container"> 
@@ -146,7 +164,7 @@
                     <h2><strong>Double Dash</strong></h2>
                     <br>
                     <center>
-                        <a target="_blank" href="https://itunes.apple.com/us/app/double-dash-hd/id985001935?mt=8"><img src="imgs/appstorepic.png" width="25%" style="max-width:100%;"></a>
+                        <a class="pulse" target="_blank" href="https://itunes.apple.com/us/app/double-dash-hd/id985001935?mt=8"><img src="imgs/appstorepic.png" width="25%" style="max-width:100%;"></a>
                     </center>
                     <br>
                     <h5 class="description">
@@ -171,7 +189,7 @@
                     <h2><strong>Viral Video Marketing</strong></h2>
                     <br>
                     <center>
-                        <a target="_blank" href="https://www.youtube.com/watch?v=XWwGRltmr-0"><img src="imgs/watchvideopic2.png" width="25%" style="max-width:100%;"></a>
+                        <a class="pulse" target="_blank" href="https://www.youtube.com/watch?v=XWwGRltmr-0"><img src="imgs/watchvideopic2.png" width="25%" style="max-width:100%;"></a>
                     </center>
                     <br>
                     <h5 class="description">
@@ -194,7 +212,7 @@
                     <h2><strong>Student Selector</strong></h2>
                     <br>
                     <center>
-                        <a target="_blank" href="https://793732e027f9fa1d908c42989cdf292a5cf610ab.googledrive.com/host/0BzEo00KYS4vAVUhIQm9IdnVIdkE/"><img src="imgs/visitwebsitepic.png" width="25%" style="max-width:100%;"></a>
+                        <a class="pulse" target="_blank" href="https://793732e027f9fa1d908c42989cdf292a5cf610ab.googledrive.com/host/0BzEo00KYS4vAVUhIQm9IdnVIdkE/"><img src="imgs/visitwebsitepic.png" width="25%" style="max-width:100%;"></a>
                     </center>
                     <br>
                     <h5 class="description">
@@ -220,7 +238,7 @@
                     <h2><strong>Spoons</strong></h2>
                     <br>
                     <center>
-                        <a target="_blank" href="https://github.com/ashyv/spoons-online-game"><button type="button" class="btn2">View Code</button></a>
+                        <a class="pulse" target="_blank" href="https://github.com/ashyv/spoons-online-game"><button type="button" class="btn2">View Code</button></a>
                     </center>
                     <br>
                     <h5 class="description">
@@ -244,7 +262,7 @@
                     <h2><strong>Deal or No Deal</strong></h2>
                     <br>
                     <center>
-                        <a target="_blank" href="https://github.com/ashyv/deal-or-no-deal"><button type="button" class="btn2">View Code</button></a>
+                        <a class="pulse" target="_blank" href="https://github.com/ashyv/deal-or-no-deal"><button type="button" class="btn2">View Code</button></a>
                     </center>
                     <br>
                     <h5 class="description">
@@ -257,7 +275,7 @@
             </div>
             <br>
             <br>
-            <center id="accomplishments_nav"><img class="img-responsive" src="imgs/greenlinepic.png" alt="Green Line"></center>
+            <center id="accomplishments_nav"><img class="img-responsive linerBottom" src="imgs/greenlinepic.png" alt="Green Line"></center>
             <br>
             <br>
         </div>
@@ -267,7 +285,7 @@
                 <br>
                 <p class="s1">Accomplishments</p> 
                 <br>
-                <center><img class="img-responsive" src="imgs/yellowlinepic.png" alt="Yellow Line"></center>
+                <center><img class="img-responsive liner" src="imgs/yellowlinepic.png" alt="Yellow Line"></center>
                 <br>
                 <div class="row">
                     <div class="col-xs-4">
@@ -330,7 +348,7 @@
                     </div>     
                 </div>
                 <br>
-                <center><img class="img-responsive" src="imgs/yellowlinepic.png" alt="Yellow Line"></center>
+                <center><img class="img-responsive linerBottom" src="imgs/yellowlinepic.png" alt="Yellow Line"></center>
                 <br>
                 <br>
             </div>
@@ -362,5 +380,27 @@
             </div>
         </div>
     </div>
+    <script>
+	$(window).scroll(function() {
+		$('.liner').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var bottomOfWindow = $(window).scrollTop() + $(window).height();
+			if (imagePos < bottomOfWindow-150) {
+				$(this).addClass("expandOpen");
+			}
+		});
+	});
+	$(window).scroll(function() {
+		$('.linerBottom').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var bottomOfWindow = $(window).scrollTop() + $(window).height();
+			if (imagePos < bottomOfWindow) {
+				$(this).addClass("expandOpen");
+			}
+		});
+	});
+</script>
 </body>
 </html>
