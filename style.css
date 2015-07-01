@@ -77,8 +77,7 @@ h1, h2, h3, h4, h5 {
     visibility: hidden;
 }
 
-<<<<<<< HEAD
-=======
+
 .liner {
     visibility: hidden; 
 }
@@ -87,7 +86,7 @@ h1, h2, h3, h4, h5 {
     visibility: hidden;
 }
 
->>>>>>> 5afdfdf5ea9e6a5af4114f575b56cf418ce9c9ed
+
 .subtitle {
     font-family: 'palatino linotype', palatino, serif;
     font-size: 32px;
