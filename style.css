@@ -1,7 +1,18 @@
+.navbar-nav > li > a {
+    padding-top:5px !important; 
+    padding-bottom:5px !important;
+    height: 32px;
+}
+
+
+.navbar {
+    min-height:28px !important;
+}
+
 #home_section {
     width: 100%; 
 	height: calc(100vh); 
-	background: url("imgs/lakepic2.jpg") no-repeat center center fixed; 
+	background: url("imgs/lakepic12.png") no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -11,6 +22,8 @@
 #myScrollspy {
     position: relative; 
 }
+
+
 
 h1, h2, h3, h4, h5 {
     font-family: 'palatino linotype', palatino, serif;
