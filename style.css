@@ -1,3 +1,4 @@
+
 .navbar-nav > li > a {
     padding-top:5px !important; 
     padding-bottom:5px !important;
@@ -17,7 +18,22 @@
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
+  	position: relative; 
 }
+
+#scroll_down {
+    padding: 10px; 
+    font-family: 'palatino linotype', palatino, serif;
+    font-size: 25px;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 1.2pt;
+    word-spacing: 0pt;
+    
+    visibility: hidden;
+    
+}
+
 
 #myScrollspy {
     position: relative; 
@@ -225,7 +241,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .highlight {
-    background-color: #FFFF00;
+    background-color: #FFFFD1;
 }
 
 #contact_section {
