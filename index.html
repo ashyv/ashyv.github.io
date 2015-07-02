@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='stylesheet' href='style.css'/>
 	<link rel="stylesheet" href="animations.css"/>
-	<link rel="stylesheet" href="animate.css">
+	<!--<link rel="stylesheet" href="animate.css"> -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.3/jquery.scrollTo.min.js"></script>
-
+    <link rel="icon" href="imgs/apic.png" type="image/png" sizes="16x16">
 	
 </head>
 <body div data-spy="scroll" data-target=".navbar" data-offset="10" id="#myScrollspy">
@@ -388,7 +388,7 @@
                 <br>
                 <div class="row">
                     <div class="col-xs-4">
-                        <p class="accomplishments_font">My friend and I created an iPhone game, Double Dash, at the Teenhackathon hosted at Paypal headquarters. While we didn't have time to completely finish the app, the judges liked the concept, challenging nature, and the future plans of the app. We finished <span class="highlight">5th place overall</span>.</p>
+                        <p class="accomplishments_font">My friend and I created an iPhone game, Double Dash, at the Teen Hackathon hosted at PayPal headquarters. The judges liked the concept, challenging nature, and future plans of the app. We finished <span class="highlight">5th place overall</span>.</p>
                     </div>
                     <div class="col-xs-4">
                         <p class="accomplishments_font">By scoring high enough on the PSAT and highlighting my extracurricular activities, I became a <span class="highlight">National Merit Finalist</span>. This award is bestowed to 15,000 high schoolers nationwide.</p>
@@ -414,19 +414,27 @@
                 <p class="contact_font">Let's talk!</p>
                 <br>
                 <div class="row">
-                    <div class="col-xs-5"></div>
-                    <div class="col-xs-1">
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-1">
                         <center><a target="_blank" href="mailto:ashyv97@gmail.com"><img class="img-responsive" src="imgs/gmailpic.png"></a></center>
                     </div>  
-                    <div class="col-xs-1">
+                    <div class="col-sm-1">
                         <center><a target="_blank" href="https://www.facebook.com/ashwin.vaidyanathan.351"><img class="img-responsive" src="imgs/facebookpic.png"></a></center>
                     </div> 
-                    <div class="col-xs-5"></div>     
+                    <div class="col-sm-5"></div>     
                 </div>
                 <br>
                 <center><img class="img-responsive" src="imgs/purplelinepic.png" alt="Purple Line"></center>
                 <br>
                 <br>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <p class="contact_font">&copy Ashwin Vaidyanathan</p>
+                    </div>
+                    <div class="col-sm-8"></div>
+                    <div class="col-sm-2">
+                        <p class="contact_font">Last Updated on July 1, 2015</p>
+                    </div>
             </div>
         </div>
     </div>
@@ -451,6 +459,22 @@
 			}
 		});
 	});
+	
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+    }
+});
 </script>
+
 </body>
 </html>
