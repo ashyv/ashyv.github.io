@@ -35,7 +35,7 @@
                 <li><a href="#contact_section">Contact</a></li> 
             </ul>   
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#home_section"><p>Ashwin Vaidyanathan&nbsp&nbsp<span class="glyphicon glyphicon-home"></span>&nbsp&nbsp&nbsp&nbsp</p></a></li>
+                <li id="home_nav"><a href="#home_section"><p>Ashwin Vaidyanathan&nbsp&nbsp<span class="glyphicon glyphicon-home"></span>&nbsp&nbsp&nbsp&nbsp</p></a></li>
             </ul>     
         </div>
     </nav>
@@ -445,6 +445,9 @@
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
                 var elem = document.getElementById("home_section");
                 elem.parentNode.removeChild(elem);
+                
+                var elem2 = document.getElementById("home_nav");
+                elem2.parentNode.removeChild(elem2);
             }
         });
     
