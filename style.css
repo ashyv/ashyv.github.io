@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5 {
 
 .s1 {
     font-family: 'palatino linotype', palatino, serif;
-    font-size: 40px;
+    font-size: 34px;
     font-weight: bold;
     font-variant: small-caps;
     text-align: center;
@@ -222,9 +222,8 @@ h1, h2, h3, h4, h5 {
     font-weight:bold;
     font-variant:small-caps;
     color:#000000;
-    letter-spacing:2pt;
-    word-spacing:2pt;
-    font-size:24px;
+    letter-spacing:1pt;
+    font-size:22px;
     text-align:center;
     font-family: 'palatino linotype', palatino, serif;
     line-height:1;
